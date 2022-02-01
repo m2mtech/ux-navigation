@@ -1,0 +1,13 @@
+--TEST--
+"languageSelector" function
+--TEMPLATE--
+{{ languageSelector() }}
+--TEMPLATE(@M2MTwigNavigationExtension/language_selector.html.twig)--
+{% for path in paths -%}
+    {{ path.route }}{{ path.parameters|join('/') }} {{ path.name }}
+{% endfor %}
+--DATA--
+return ['app' => $this->getApp()];
+--EXPECT--
+https://localhost/en English
+https://localhost/de Deutsch

@@ -1,0 +1,8 @@
+{% block languageSelector -%}
+    <div class="languageSelector">
+        {% for path in paths -%}
+            <a href="{{ path(path.route, path.parameters) }}">{{ path.name|lower }}</a>
+            {%- if not loop.last %} | {% endif %}
+        {%- endfor %}
+    </div>
+{%- endblock %}
