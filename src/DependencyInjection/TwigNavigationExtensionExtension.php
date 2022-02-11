@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 
-class M2MTwigNavigationExtensionExtension extends Extension
+class TwigNavigationExtensionExtension extends Extension
 {
     /**
      * @param array<string,string> $configs
