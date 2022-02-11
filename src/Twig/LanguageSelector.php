@@ -37,7 +37,7 @@ class LanguageSelector implements RuntimeExtensionInterface
     {
         $languagePaths = $this->getLanguagePaths($context['app']);
 
-        return $env->render('@M2MTwigNavigationExtension/language_selector.html.twig', [
+        return $env->render('@M2MTechTwigNavigationExtension/language_selector.html.twig', [
             'paths' => $languagePaths,
         ]);
     }

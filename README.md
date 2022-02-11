@@ -20,7 +20,7 @@ If you are not using Flex enable the bundle:
 
 return [
     // ...
-    M2MTech\TwigNavigationExtension\TwigNavigationExtensionBundle::class => ['all' => true],
+    M2MTech\TwigNavigationExtension\M2MTechTwigNavigationExtensionBundle::class => ['all' => true],
 ];
 ```
 

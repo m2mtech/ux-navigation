@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 
-class TwigNavigationExtensionExtension extends Extension
+class M2MTechTwigNavigationExtensionExtension extends Extension
 {
     /**
      * @param array<string,string> $configs
@@ -36,6 +36,6 @@ class TwigNavigationExtensionExtension extends Extension
 
     public function getAlias(): string
     {
-        return 'm2m_twig_navigation_extension';
+        return 'm2mtech_twig_navigation_extension';
     }
 }
