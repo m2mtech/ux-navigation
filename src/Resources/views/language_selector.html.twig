@@ -1,4 +1,4 @@
-{% block languageSelector -%}
+{% block m2mLanguageSelector -%}
     <div class="languageSelector">
         {% for path in paths -%}
             <a href="{{ path(path.route, path.parameters) }}">{{ path.name|lower }}</a>

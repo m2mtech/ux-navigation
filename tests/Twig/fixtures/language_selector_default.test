@@ -1,7 +1,7 @@
 --TEST--
-"languageSelector" function
+"m2mLanguageSelector" function
 --TEMPLATE--
-{{ languageSelector() }}
+{{ m2mLanguageSelector() }}
 --TEMPLATE(@M2MTechTwigNavigationExtension/language_selector.html.twig)--
 {% for path in paths -%}
     {{ path.route }}{{ path.parameters|join('/') }} {{ path.name }}

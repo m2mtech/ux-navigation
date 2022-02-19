@@ -23,7 +23,7 @@ class NavigationExtension extends AbstractExtension
         ];
 
         return [
-            new TwigFunction('languageSelector', [LanguageSelector::class, 'twigFunction'], $options),
+            new TwigFunction('m2mLanguageSelector', [LanguageSelector::class, 'twigFunction'], $options),
         ];
     }
 }

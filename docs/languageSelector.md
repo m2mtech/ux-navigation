@@ -1,11 +1,11 @@
-# `languageSelector()`
+# `m2mLanguageSelector()`
 
 Renders links from the current path to switch languages.
 
 ## Usage
 
 ```twig
-{{ languageSelector() }}
+{{ m2mLanguageSelector() }}
 ```
 
 will result in

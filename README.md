@@ -26,9 +26,9 @@ return [
 
 ## Usage
 
-| Function                                         | Description                                              |
-|--------------------------------------------------|----------------------------------------------------------|
-| [`languageSelector()`](docs/languageSelector.md) | Renders links from the current path to switch languages. |
+| Function                                            | Description                                              |
+|-----------------------------------------------------|----------------------------------------------------------|
+| [`m2mLanguageSelector()`](docs/languageSelector.md) | Renders links from the current path to switch languages. |
 
 Documentation can be found in the [./docs](docs/index.md) directory.
 
