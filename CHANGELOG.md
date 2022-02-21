@@ -1,6 +1,7 @@
 # Changelog
 
 ## [2.0.0] - 2022-02-19
+- BC-Break: Renamed Bundle
 - BC-Break: added m2m* to names due to possible conflicting naming of other extensions 
 
 ## [1.1.1] - 2022-02-11
@@ -18,10 +19,10 @@
 - ...
 --->
 
-[2.0.0]: https://github.com/m2mtech/twig-navigation-extension/compare/v1.1.1...v2.0.0
-[1.1.1]: https://github.com/m2mtech/twig-navigation-extension/compare/v1.1.0...v1.1.1
-[1.1.0]: https://github.com/m2mtech/twig-navigation-extension/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/m2mtech/twig-navigation-extension/releases/tag/v1.0.0
+[2.0.0]: https://github.com/m2mtech/ux-navigation/compare/v1.1.1...v2.0.0
+[1.1.1]: https://github.com/m2mtech/ux-navigation/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/m2mtech/ux-navigation/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/m2mtech/ux-navigation/releases/tag/v1.0.0
 <!---
-[Unreleased]: https://github.com/m2mtech/twig-navigation-extension/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/m2mtech/ux-navigation/compare/v1.0.0...HEAD
 --->

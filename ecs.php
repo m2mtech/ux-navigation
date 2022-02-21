@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the twig-navigation-extension package.
+ * This file is part of the ux-navigation package.
  *
  * (c) 2022 m2m server software gmbh <tech@m2m.at>
  * For the full copyright and license information, please view the LICENSE
@@ -22,6 +22,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     ]);
 
     $parameters->set(Option::SKIP, [
+        __DIR__.'/src/Resources/assets',
         OrderedImportsFixer::class => [
             __DIR__.'/src/Resources/config/services.php',
         ],

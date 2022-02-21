@@ -1,15 +1,15 @@
 <?php
 /*
- * This file is part of the twig-navigation-extension package.
+ * This file is part of the ux-navigation package.
  *
  * (c) 2022 m2m server software gmbh <tech@m2m.at>
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace M2MTech\TwigNavigationExtension\Tests\DependencyInjection;
+namespace M2MTech\UxNavigation\Tests\DependencyInjection;
 
-use M2MTech\TwigNavigationExtension\DependencyInjection\Configuration;
+use M2MTech\UxNavigation\DependencyInjection\Configuration;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\Definition\Processor;
 

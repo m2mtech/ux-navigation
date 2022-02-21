@@ -10,7 +10,7 @@ This bundle provides a Twig extensions for common navigation widgets.
 ## Installation
 
 ```bash
-composer require m2mtech/twig-navigation-extension
+composer require m2mtech/ux-navigation
 ```
 
 If you are not using Flex enable the bundle:
@@ -20,7 +20,7 @@ If you are not using Flex enable the bundle:
 
 return [
     // ...
-    M2MTech\TwigNavigationExtension\M2MTechTwigNavigationExtensionBundle::class => ['all' => true],
+    M2MTech\UxNavigation\M2MTechUxNavigationBundle::class => ['all' => true],
 ];
 ```
 

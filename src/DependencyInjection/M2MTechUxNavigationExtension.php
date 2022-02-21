@@ -1,13 +1,13 @@
 <?php
 /*
- * This file is part of the twig-navigation-extension package.
+ * This file is part of the ux-navigation package.
  *
  * (c) 2022 m2m server software gmbh <tech@m2m.at>
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace M2MTech\TwigNavigationExtension\DependencyInjection;
+namespace M2MTech\UxNavigation\DependencyInjection;
 
 use Exception;
 use Symfony\Component\Config\FileLocator;
@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 
-class M2MTechTwigNavigationExtensionExtension extends Extension
+class M2MTechUxNavigationExtension extends Extension
 {
     /**
      * @param array<string,string> $configs
@@ -30,12 +30,12 @@ class M2MTechTwigNavigationExtensionExtension extends Extension
         $loader = new PhpFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.php');
 
-        $definition = $container->getDefinition('m2mtech.twig.runtime.language.selector');
+        $definition = $container->getDefinition('m2mtech.ux.navigation.twig.runtime.language.selector');
         $definition->replaceArgument(0, $config['language_selection']['languages']);
     }
 
     public function getAlias(): string
     {
-        return 'm2mtech_twig_navigation_extension';
+        return 'm2m_ux_navigation';
     }
 }

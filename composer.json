@@ -1,15 +1,19 @@
 {
-    "name": "m2mtech/twig-navigation-extension",
-    "description": "Twig extensions for common navigation widgets for symfony.",
+    "name": "m2mtech/ux-navigation",
+    "description": "Twig/UX extensions for common navigation widgets for symfony.",
     "type": "symfony-bundle",
     "keywords": [
+        "dark mode",
+        "extension",
+        "language selector",
+        "navigation",
+        "symfony",
+        "symfony-ux",
         "twig extension",
         "twig",
-        "extension",
-        "symfony",
-        "navigation"
+        "ux"
     ],
-    "homepage": "https://github.com/m2mtech/twig-navigation-extension",
+    "homepage": "https://github.com/m2mtech/ux-navigation",
     "license": "MIT",
     "authors": [
         {
@@ -30,16 +34,17 @@
         "phpunit/phpunit": "^8.5.22|^9.5",
         "roave/security-advisories": "dev-latest",
         "symfony/phpunit-bridge": "^5.4|^6.0",
-        "symplify/easy-coding-standard": "^10.0"
+        "symfony/webpack-encore-bundle": "^1.14",
+        "symplify/easy-coding-standard": "^10.1"
     },
     "autoload": {
         "psr-4": {
-            "M2MTech\\TwigNavigationExtension\\": "src"
+            "M2MTech\\UxNavigation\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "M2MTech\\TwigNavigationExtension\\Tests\\": "tests"
+            "M2MTech\\UxNavigation\\Tests\\": "tests"
         }
     },
     "scripts": {

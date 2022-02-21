@@ -23,7 +23,7 @@ will result in
 The shown languages can be adjusted via the configuration:
 
 ```yaml
-m2mtech_twig_navigation_extension:
+m2m_ux_navigation:
     language_selection:
         languages: [de, en]
 ```
@@ -38,4 +38,4 @@ The layout can be adjusted using css
 }
 ```
 
-over by overriding `@M2MTechTwigNavigationExtension/language_selector.html.twig`.
+over by overriding `@M2MTechUxNavigation/language_selector.html.twig`.
