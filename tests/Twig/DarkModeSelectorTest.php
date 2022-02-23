@@ -33,7 +33,9 @@ class DarkModeSelectorTest extends TestCase
             ->with(
                 '@M2MTechUxNavigation/dark_mode_selector.html.twig',
                 $expectedParameters
-            );
+            )
+            ->willReturn('ok')
+        ;
 
         $darkModeSelector->twigFunctionSelector($twig);
     }

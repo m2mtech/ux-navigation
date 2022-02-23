@@ -1,8 +1,9 @@
 # Changelog
 
-## [2.0.0] - 2022-02-19
+## [2.0.0] - 2022-02-23
 - BC-Break: Renamed Bundle
-- BC-Break: added m2m* to names due to possible conflicting naming of other extensions 
+- BC-Break: added m2m* to names due to possible conflicting naming of other extensions
+- added: dark-mode selector
 
 ## [1.1.1] - 2022-02-11
 - Fixed flex / bug in namespace
