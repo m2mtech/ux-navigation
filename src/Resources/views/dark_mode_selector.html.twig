@@ -1,0 +1,6 @@
+{% trans_default_domain 'M2MTechUxNavigationBundle' %}
+{% block m2mDarkModeSelector -%}
+    <button type="button" class="darkModeSelector" aria-expanded="false" aria-label="{{ 'toggle.dark.mode'|trans }}" {{ stimulus_controller(controller, values) }} {{ stimulus_action(controller, 'toggle') }}>
+        <i aria-hidden="true" class="far fa-lightbulb-on fa-fw"></i>
+    </button>
+{%- endblock %}

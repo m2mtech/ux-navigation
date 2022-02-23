@@ -1,0 +1,12 @@
+--TEST--
+"m2mDarkModeSelector" function
+--TEMPLATE--
+{{ m2mDarkModeSelector() }}
+--TEMPLATE(@M2MTechUxNavigation/dark_mode_selector.html.twig)--
+controller: {{ controller}}
+values: {{ values|json_encode }}
+--DATA--
+return [];
+--EXPECT--
+controller: @m2mtech/ux-navigation/dark-mode
+values: {&quot;classes&quot;:[&quot;class-light&quot;,&quot;class-dark&quot;],&quot;attributes&quot;:[&quot;atribute-light&quot;,&quot;attribute-dark&quot;]}

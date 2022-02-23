@@ -13,9 +13,28 @@ use M2MTech\UxNavigation\Twig\LanguageSelector;
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Twig\AppVariable;
 use Symfony\Component\HttpFoundation\Request;
+use Twig\Environment;
+use Twig\Error\Error;
 
 class LanguageSelectorTest extends TestCase
 {
+    /**
+     * @throws Error
+     */
+    public function testTwigFunction(): void
+    {
+        $languageSelector = new LanguageSelector(['en', 'de']);
+        $twig = $this->createMock(Environment::class);
+        $twig->method('render')
+            ->willReturnArgument(0);
+        $app = $this->createMock(AppVariable::class);
+
+        $this->assertSame(
+            '@M2MTechUxNavigation/language_selector.html.twig',
+            $languageSelector->twigFunction($twig, ['app' => $app])
+        );
+    }
+
     public function testGetLanguagePaths(): void
     {
         $languageSelector = new LanguageSelector(['en', 'de']);

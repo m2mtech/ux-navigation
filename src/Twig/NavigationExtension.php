@@ -23,6 +23,8 @@ class NavigationExtension extends AbstractExtension
         ];
 
         return [
+            new TwigFunction('m2mDarkModeHeader', [DarkModeSelector::class, 'twigFunctionHeader'], $options),
+            new TwigFunction('m2mDarkModeSelector', [DarkModeSelector::class, 'twigFunctionSelector'], $options),
             new TwigFunction('m2mLanguageSelector', [LanguageSelector::class, 'twigFunction'], $options),
         ];
     }

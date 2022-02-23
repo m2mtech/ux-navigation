@@ -31,3 +31,9 @@ services:
       context: .
       dockerfile: docker/php7.2/Dockerfile
 
+  node:
+    build:
+      context: .
+      dockerfile: docker/node/Dockerfile
+    volumes:
+      - ./src/Resources/assets:/app:delegated

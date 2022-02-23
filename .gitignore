@@ -1,6 +1,9 @@
 .idea
 ansible
+**/node_modules
 vendor
 .ecs_cache
+.phpunit*
 composer.lock
 docker-compose.*.yml
+**/yarn.lock

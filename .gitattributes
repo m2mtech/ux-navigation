@@ -8,6 +8,7 @@ ecs.php             export-ignore
 docker*             export-ignore
 phpunit*            export-ignore
 phpstan*            export-ignore
+src/Resources/assets/test   export-ignore
 tests               export-ignore
 
 *.neon              linguist-language=YAML

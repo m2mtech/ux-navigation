@@ -5,7 +5,7 @@
 
 ---
 
-This bundle provides a Twig extensions for common navigation widgets.
+This bundle provides Twig extensions for common navigation widgets as well as their stimulus controllers wired for [symfony UX](https://symfony.com/doc/current/frontend/ux.html).
 
 ## Installation
 
@@ -24,10 +24,19 @@ return [
 ];
 ```
 
+If you want to use the bundled stimulus controllers install the Javascript dependencies and compile them:
+
+```bash
+yarn install --force
+yarn encore dev
+```
+
+
 ## Usage
 
 | Function                                            | Description                                              |
 |-----------------------------------------------------|----------------------------------------------------------|
+| [`m2mDarkModeSelector()`](docs/darkModeSelector.md) | Renders dark mode selector.                              |
 | [`m2mLanguageSelector()`](docs/languageSelector.md) | Renders links from the current path to switch languages. |
 
 Documentation can be found in the [./docs](docs/index.md) directory.
@@ -39,8 +48,10 @@ This package has been developed for php 7.4 with compatibility tested for php 7.
 
 ```bash
 composer test
-```
 
+# or the Javascript respectively  
+cd src/Resources/assets; yarn test
+```
 
 ## Changelog
 

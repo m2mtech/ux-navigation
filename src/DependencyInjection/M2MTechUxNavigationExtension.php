@@ -32,10 +32,13 @@ class M2MTechUxNavigationExtension extends Extension
 
         $definition = $container->getDefinition('m2mtech.ux.navigation.twig.runtime.language.selector');
         $definition->replaceArgument(0, $config['language_selection']['languages']);
+
+        $definition = $container->getDefinition('m2mtech.ux.navigation.twig.runtime.dark.mode.selector');
+        $definition->replaceArgument(0, $config['dark_mode']);
     }
 
     public function getAlias(): string
     {
-        return 'm2m_ux_navigation';
+        return 'm2mtech_ux_navigation';
     }
 }

@@ -16,7 +16,7 @@ return [
 // config/*/config.yaml
 
 - m2mtech_twig_navigation_extension:
-+ m2m_ux_navigation:
++ m2mtech_ux_navigation:
     language_selection:
 ```
 

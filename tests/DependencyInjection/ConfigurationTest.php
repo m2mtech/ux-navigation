@@ -21,14 +21,22 @@ class ConfigurationTest extends TestCase
             'language_selection' => [
                 'languages' => ['en', 'de', 'fr'],
             ],
+            'dark_mode' => [
+                'classes' => ['fa-lightbulb', 'fa-lightbulb-on'],
+                'attributes' => ['lightbulb', 'lightbulb-on'],
+            ],
         ], $this->getConfig([]));
     }
 
-    public function testLanguages(): void
+    public function testSetConfig(): void
     {
         $config = [
             'language_selection' => [
                 'languages' => ['de', 'en'],
+            ],
+            'dark_mode' => [
+                'classes' => ['fa-lightbulb-off', 'fa-lightbulb-on'],
+                'attributes' => ['lightbulb-off', 'lightbulb-on'],
             ],
         ];
         $this->assertEquals($config, $this->getConfig($config));

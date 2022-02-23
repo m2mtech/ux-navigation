@@ -23,7 +23,8 @@ will result in
 The shown languages can be adjusted via the configuration:
 
 ```yaml
-m2m_ux_navigation:
+// config.yaml
+m2mtech_ux_navigation:
     language_selection:
         languages: [de, en]
 ```

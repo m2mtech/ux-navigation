@@ -9,6 +9,7 @@
 
 namespace M2MTech\UxNavigation\Tests\Twig;
 
+use M2MTech\UxNavigation\Twig\DarkModeSelector;
 use M2MTech\UxNavigation\Twig\LanguageSelector;
 use M2MTech\UxNavigation\Twig\NavigationExtension;
 use Symfony\Bridge\Twig\AppVariable;
@@ -25,17 +26,23 @@ class NavigationExtensionTest extends IntegrationTestCase
         return __DIR__.'/fixtures';
     }
 
-    protected function getExtensions()
+    protected function getExtensions(): array
     {
         return [
             new NavigationExtension(),
         ];
     }
 
-    protected function getRuntimeLoaders()
+    protected function getRuntimeLoaders(): array
     {
         return [
             new FactoryRuntimeLoader([
+                DarkModeSelector::class => function (): DarkModeSelector {
+                    return new DarkModeSelector([
+                        'classes' => ['class-light', 'class-dark'],
+                        'attributes' => ['atribute-light', 'attribute-dark'],
+                    ]);
+                },
                 LanguageSelector::class => function (): LanguageSelector {
                     return new LanguageSelector(['en', 'de']);
                 },

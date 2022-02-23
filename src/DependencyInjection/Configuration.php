@@ -9,6 +9,7 @@
 
 namespace M2MTech\UxNavigation\DependencyInjection;
 
+use M2MTech\UxNavigation\Twig\DarkModeSelector;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
@@ -16,10 +17,23 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('m2m_ux_navigation');
+        $treeBuilder = new TreeBuilder('m2mtech_ux_navigation');
 
         $treeBuilder->getRootNode()
             ->children()
+                ->arrayNode('dark_mode')
+                    ->addDefaultsIfNotSet()
+                    ->children()
+                        ->arrayNode('classes')
+                            ->scalarPrototype()->end()
+                            ->defaultValue([DarkModeSelector::CLASS_LIGHT, DarkModeSelector::CLASS_DARK])
+                        ->end()
+                        ->arrayNode('attributes')
+                            ->scalarPrototype()->end()
+                            ->defaultValue([DarkModeSelector::ATTRIBUTE_LIGHT, DarkModeSelector::ATTRIBUTE_DARK])
+                        ->end()
+                    ->end()
+                ->end()
                 ->arrayNode('language_selection')
                     ->addDefaultsIfNotSet()
                     ->children()
